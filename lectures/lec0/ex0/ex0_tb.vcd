@@ -1,0 +1,114 @@
+$date
+	Mon Oct  5 20:22:50 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module ex0_tb $end
+$var wire 1 ! c_tb $end
+$var reg 1 " a_tb $end
+$var reg 1 # b_tb $end
+$scope module dut $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 ! c $end
+$var wire 1 $ parta $end
+$var wire 1 % partb $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0%
+0$
+0#
+0"
+0!
+$end
+#5000
+1!
+1%
+1"
+#10000
+0!
+0%
+0"
+#15000
+1!
+1%
+1"
+#20000
+1$
+0%
+0"
+1#
+#25000
+0!
+0$
+1"
+#30000
+0"
+0#
+#35000
+1!
+1%
+1"
+#40000
+1$
+0%
+0"
+1#
+#45000
+0!
+0$
+1"
+#50000
+0"
+0#
+#55000
+1!
+1%
+1"
+#60000
+1$
+0%
+0"
+1#
+#65000
+0!
+0$
+1"
+#70000
+0"
+0#
+#75000
+1!
+1%
+1"
+#80000
+1$
+0%
+0"
+1#
+#85000
+0!
+0$
+1"
+#90000
+0"
+0#
+#95000
+1!
+1%
+1"
+#100000
+1$
+0%
+0"
+1#
