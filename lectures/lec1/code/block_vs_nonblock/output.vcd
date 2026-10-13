@@ -1,0 +1,201 @@
+$date
+	Mon Oct 12 19:33:56 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 1 ! c1 $end
+$var wire 1 " c0 $end
+$var reg 1 # a $end
+$var reg 1 $ b $end
+$var reg 1 % clk $end
+$scope module dut0 $end
+$var wire 1 $ b $end
+$var wire 1 % clk $end
+$var reg 1 & a $end
+$var reg 1 " c $end
+$upscope $end
+$scope module dut1 $end
+$var wire 1 $ b $end
+$var wire 1 % clk $end
+$var reg 1 ' a $end
+$var reg 1 ! c $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x'
+x&
+0%
+0$
+0#
+x"
+x!
+$end
+#4
+0&
+0!
+0'
+1%
+#8
+0%
+#12
+0"
+1%
+1#
+#16
+0%
+#20
+1%
+#24
+0%
+0#
+1$
+#28
+1&
+1!
+1'
+1%
+#32
+0%
+#36
+1"
+1%
+1#
+#40
+0%
+#44
+1%
+#48
+0%
+0#
+0$
+#52
+0&
+0!
+0'
+1%
+#56
+0%
+#60
+0"
+1%
+1#
+#64
+0%
+#68
+1%
+#72
+0%
+0#
+1$
+#76
+1&
+1!
+1'
+1%
+#80
+0%
+#84
+1"
+1%
+1#
+#88
+0%
+#92
+1%
+#96
+0%
+0#
+0$
+#100
+0&
+0!
+0'
+1%
+#104
+0%
+#108
+0"
+1%
+1#
+#112
+0%
+#116
+1%
+#120
+0%
+0#
+1$
+#124
+1&
+1!
+1'
+1%
+#128
+0%
+#132
+1"
+1%
+1#
+#136
+0%
+#140
+1%
+#144
+0%
+0#
+0$
+#148
+0&
+0!
+0'
+1%
+#152
+0%
+#156
+0"
+1%
+1#
+#160
+0%
+#164
+1%
+#168
+0%
+0#
+1$
+#172
+1&
+1!
+1'
+1%
+#176
+0%
+#180
+1"
+1%
+1#
+#184
+0%
+#188
+1%
+#192
+0%
+0#
+0$
+#196
+0&
+0!
+0'
+1%
+#200
+0%
