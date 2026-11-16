@@ -87,6 +87,7 @@ always @(*) begin
 
     // Negative Sobel results should also show edges
     // add if, else logic to check if our acculmated total is negative. if so, make it positive... ************************
+    // assign the signed total to magnitude in this block
 
     if (mode == 0)
         scaled = $unsigned(total) >> 4;  // Blur: divide by 16
