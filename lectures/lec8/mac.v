@@ -9,7 +9,7 @@
 // enable = Allow multiplication and addition
 // ==========================================
 
-module mac (
+module mac ( 
     /*input or output?*/ clk,
     /*input or output?*/ clear,
     /*input or output?*/ enable,
@@ -23,7 +23,7 @@ always @(posedge clk) begin
     if (clear)
         total <= 0;
     else if (enable)
-        total <=  // add actual MAC logic 
+        total <=  // add actual MAC logic ************************
 
 end
 
