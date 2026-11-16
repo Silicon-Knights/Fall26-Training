@@ -55,7 +55,7 @@ end
 
 
 // Controller: selects pixels 0-8 and controls the MAC
-// add conv_controller module instance, name it controller. ************************
+// add conv_controller module instance, with all the right inputs/outputs, name it "controller". ************************
 
 
 // MAC: multiply pixel by weight, then add to total
