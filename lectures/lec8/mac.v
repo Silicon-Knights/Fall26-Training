@@ -21,7 +21,7 @@ module mac (
 always @(posedge clk) begin
 
     if (clear)
-        total <= 0;
+        total <= // what should total start at? ************************
     else if (enable)
         total <=  // add actual MAC logic ************************
 
