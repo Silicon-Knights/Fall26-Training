@@ -36,32 +36,17 @@ assign pixel = window[index*8 +: 8];
 
 // Choose the weight for the current pixel
 always @(*) begin
-
+    // gaussian blur below
     if (mode == 0) begin
         case (index)
-            0: weight = 1;
-            1: weight = 2;
-            2: weight = 1;
-            3: weight = 2;
-            4: weight = 4;
-            5: weight = 2;
-            6: weight = 1;
-            7: weight = 2;
-            8: weight = 1;
+            // set each value from 0 -> 8 to the right weight value for the filter ************************
             default: weight = 0;
         endcase
 
+    // edge detector below
     end else begin
         case (index)
-            0: weight = -1;
-            1: weight =  0;
-            2: weight =  1;
-            3: weight = -2;
-            4: weight =  0;
-            5: weight =  2;
-            6: weight = -1;
-            7: weight =  0;
-            8: weight =  1;
+            // set each value from 0 -> 8 to the right weight value for the filter ************************
             default: weight = 0;
         endcase
 
@@ -101,10 +86,7 @@ reg [15:0] scaled;
 always @(*) begin
 
     // Negative Sobel results should also show edges
-    if (total < 0)
-        magnitude = -total;
-    else
-        magnitude = total;
+    // add if, else logic to check if our acculmated total is negative. if so, make it positive... ************************
 
     if (mode == 0)
         scaled = $unsigned(total) >> 4;  // Blur: divide by 16
