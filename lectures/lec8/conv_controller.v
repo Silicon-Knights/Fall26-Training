@@ -37,14 +37,14 @@ always @(posedge clk) begin
             IDLE: begin
                 // index <= 0 starts us at pixel 0 below
                 index <= 0;          
-                // add logic to check input start, to determine how to transition state... 
+                // add logic to check input start, to determine how to transition state... ************************
             end
             RUN: begin
-                // check if index has hit last pixel. If so, transition to DONE state,
-                // else, move to the next pixel
+                // check if index has hit last pixel. If so, transition to DONE state, ************************
+                // else, move to the next pixel ************************
             end
             DONE: begin
-                // adjust state to IDLE state to be ready for next window
+                // adjust state to IDLE state to be ready for next window ************************
             end
             default: state <= IDLE; // default waiting state
 
@@ -55,6 +55,6 @@ end
 // Control signals sent to the MAC and testbench
 assign clear  = reset || (state == IDLE && start); // Clear total before each window
 assign enable = (state == RUN);                    // Calculate only while RUN
-assign done   = // add logic for checking status of DONE state...
+assign done   = // add logic for checking status of DONE state... ************************
 
 endmodule
