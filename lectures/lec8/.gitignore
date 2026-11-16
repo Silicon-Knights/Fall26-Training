@@ -1,0 +1,23 @@
+# Generated images and memory files
+input_image.mem
+input_preview.png
+blur_output.mem
+edge_output.mem
+blur_output.png
+edge_output.png
+
+# Simulation files
+blur_sim
+edge_sim
+conv_sim
+*.vvp
+*.vcd
+
+# Python
+__pycache__/
+*.pyc
+
+# Quartus
+db/
+incremental_db/
+output_files/
