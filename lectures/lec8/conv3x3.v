@@ -55,15 +55,7 @@ end
 
 
 // Controller: selects pixels 0-8 and controls the MAC
-conv_controller controller (
-    .clk(clk),
-    .reset(reset),
-    .start(start),
-    .clear(clear),
-    .enable(enable),
-    .done(done),
-    .index(index)
-);
+// add conv_controller module instance, name it controller. ************************
 
 
 // MAC: multiply pixel by weight, then add to total
