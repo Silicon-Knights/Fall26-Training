@@ -82,7 +82,7 @@ always @(*) begin
     // assign the signed total to magnitude in this block
 
     if (mode == 0)
-        scaled = $unsigned(total) >> 4;  // Blur: divide by 16
+        scaled = $unsigned(total) >> // factor in the scalar from the gaussian blur ************************
     else
         scaled = magnitude >> 2;        // Sobel: divide by 4
 
