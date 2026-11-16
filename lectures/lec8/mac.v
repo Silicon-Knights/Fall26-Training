@@ -10,23 +10,20 @@
 // ==========================================
 
 module mac (
-    input clk,
-    input clear,
-    input enable,
-
-    input signed [9:0] pixel, // 10 bit (8 bit number + 2 buffer bits)
-    input signed [3:0] weight, // weight range is -2 to 2, so 4 bits
-
-    output reg signed [15:0] total // 16 bits (big to store running sum)
+    /*input or output?*/ clk,
+    /*input or output?*/ clear,
+    /*input or output?*/ enable,
+    /*input or output?*/ signed [9:0] pixel, // 10 bit (8 bit number + 2 buffer bits)
+    /*input or output?*/ signed [3:0] weight, // weight range is -2 to 2, so 4 bits
+    /*input or output?*/ reg signed [15:0] total // 16 bits (big to store running sum)
 );
 
 always @(posedge clk) begin
 
     if (clear)
         total <= 0;
-
     else if (enable)
-        total <= total + pixel * weight; // actual MAC logic if allowed
+        total <=  // add actual MAC logic 
 
 end
 
